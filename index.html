@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>DOM Manipulation</title>
+        <script src="inShuffle.js" defer></script>
+    </head>
+    <body>
+        <div>
+        <h1 class="directions">Hit Refresh to try different question<br></h1>
+        <label><br>What is the position of the first card after the 7th shuffle?</label>
+        <button onclick = "sevenShuffles()">Answer</button>
+        <label class="answer" id="answer-one"></label>
+        <br>
+        <label><br>How many times must you perform the shuffle so that the top card becomes the bottom card?</label>
+        <button onclick="firstToBottom()">Answer</button>
+        <label class="answer" id="answer-two"></label>
+        <br>
+        <label><br>When do the first and last cards in the deck touch?</label>
+        <button onclick="firstTouchLast()">Answer</button>
+        <label class="answer" id="answer-three"></label>
+    </div>
+        <div class="array-container">
+            <br>
+            <h2 class="directions">Result Array: </h2>
+            <pre id="array" class="array"></pre>
+        </div>
+
+    </body>
+</html>
